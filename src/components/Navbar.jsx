@@ -9,7 +9,7 @@ const Navbar = () => {
     const handleClick = () => setNav(!nav)
 
     return (
-        <div className='fixed w-full h-[100px] flex justify-end items-center px-4 bg-[#6da2f3] text-white'>
+        <div className='fixed w-full h-[100px] flex justify-end items-center px-4 bg-[#79a9f2] text-white'>
             {/* menu */}
             <ul className='hidden md:flex'>
                 <li className='py-4 text-lg hover:bg-white hover:text-black'>Home</li>
