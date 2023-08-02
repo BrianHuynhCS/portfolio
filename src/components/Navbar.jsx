@@ -9,21 +9,18 @@ const Navbar = () => {
     const handleClick = () => setNav(!nav)
 
     return (
-        <div className='fixed w-full h-[100px] flex justify-between items-center px-4 bg-[#6da2f3] text-white'>
-            <div>
-                <img src={BH} alt='Logo' style ={{width:'80px'}}></img>
-            </div>
+        <div className='fixed w-full h-[100px] flex justify-end items-center px-4 bg-[#6da2f3] text-white'>
             {/* menu */}
             <ul className='hidden md:flex'>
-                <li className='py-4 hover:bg-white hover:text-black'>Home</li>
-                <li className='py-4 hover:bg-white hover:text-black'>About</li>
-                <li className='py-4 hover:bg-white hover:text-black'>Skills</li>
-                <li className='py-4 hover:bg-white hover:text-black'>Contact</li>
+                <li className='py-4 text-lg hover:bg-white hover:text-black'>Home</li>
+                <li className='py-4 text-lg hover:bg-white hover:text-black'>About</li>
+                <li className='py-4 text-lg hover:bg-white hover:text-black'>Skills</li>
+                <li className='py-4 text-lg hover:bg-white hover:text-black'>Contact</li>
             </ul>
 
             {/* Hamburger */}
             <div onClick={handleClick} className='md:hidden z-10'>
-                {!nav ? <FaBars /> : <FaTimes />}
+                {!nav ? <FaBars size={30} /> : <FaTimes />}
             </div>
 
             <ul className={!nav ? 'hidden' : 'absolute top-0 left-0 w-full h-screen bg-[#0a192f] flex flex-col justify-center items-center'}>
