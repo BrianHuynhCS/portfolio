@@ -34,12 +34,12 @@ const Navbar = () => {
             <div className='hidden lg:flex fixed flex-col top-[35%] left-0'>
                 <ul>
                     <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-blue-600'>
-                        <a className='flex justify-between items-center w-full text-gray-300' href='/'>
+                        <a className='flex justify-between items-center w-full text-gray-300' href='https://www.linkedin.com/in/brian-huynhcs/'>
                             LinkedIn <FaLinkedin size={30}/>
                         </a>
                     </li>
                     <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-gray-800'>
-                        <a className='flex justify-between items-center w-full text-gray-300' href='/'>
+                        <a className='flex justify-between items-center w-full text-gray-300' href='https://github.com/BrianHuynhCS'>
                             Github <FaGithub size={30}/>
                         </a>
                     </li>
@@ -49,7 +49,7 @@ const Navbar = () => {
                         </a>
                     </li>
                     <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#565f69]'>
-                        <a className='flex justify-between items-center w-full text-gray-300' href='/'>
+                        <a className='flex justify-between items-center w-full text-gray-300' href='https://github.com/BrianHuynhCS/Resume/blob/main/Brian_Huynh_Resume.pdf'>
                             Resume <BsFillPersonLinesFill size={30}/>
                         </a>
                     </li>
