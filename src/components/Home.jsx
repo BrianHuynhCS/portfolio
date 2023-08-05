@@ -5,9 +5,9 @@ import pf from '../assets/IMG_9408.jpg'
 const Home = () => {
     return (
         <div>
-            <div name='home' className='w-fill h-screen bg-[#79a9f2]'>
+            <div name='home' className='w-fill h-screen bg-[#79a9f2] text-white'>
                 {/* Container */}
-                <div className='max-w-[1300px] mx-auto px-8 flex flex-col justify-center h-full text-white'>
+                <div className='max-w-[1300px] mx-auto px-8 flex flex-col justify-center h-full'>
                     <div className='flex items-center justify-between'>
                         <div>
                             <p className='text-2xl'>Hi, my name is</p>
