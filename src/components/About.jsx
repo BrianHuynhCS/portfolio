@@ -1,42 +1,45 @@
 import React from 'react';
+import kobi1 from '../assets/IMG_0888.JPG';
+import kobi2 from '../assets/IMG_1805.JPG';
+import kobi3 from '../assets/IMG_1317.JPG';
+import mochi1 from '../assets/IMG_4775.JPG';
+import mochi2 from '../assets/IMG_2496.JPG';
+import mochi3 from '../assets/IMG_4517.JPG';
 
 const About = () => {
     return (
-        <div name='about' className='w-full h-screen bg-[#79a9f2] text-white px-8'>
+        <div name='about' className='w-full h-screen bg-[#79a9f2] text-white'>
             <div className='flex flex-col justify-center items-center w-full h-full'>
-                <div className='max-w-[1300px] w-full flex border border-red-500'>
-                    <div className='flex-1 sm:text-center pb-8'>
-                        <div className='inline-block md:w-1/2'>
-                            <p className='text-4xl font-bold inline border-b-4 border-white'>
-                                About
-                            </p>
-                        </div>
-                        <div className='inline-block md:w-1/2'>
-                            <p className='flex-1 text-4xl font-bold inline border-b-4 border-white'>
-                                Experience
-                            </p>  
-                        </div>
+                <div className='max-w-[1100px] w-full grid grid-cols-2 gap-8'>
+                    <div className='sm:text-left pb-8 pl-4'>
+                        <p className='text-4xl font-bold inline border-b-4 border-white'>
+                            About Me
+                        </p>
                     </div>
-                    <div>
-                        
-                    </div>
+                    <div></div>
                 </div>
 
-                
-                <div className='max-w-[1300px] w-full'>
-                    <div className='text-2xl'>
-                        <p>Hey there! I'm Brian Huynh, a Software Engineer based in California. I'm passionate about full-stack development and enjoy creating products for both personal and business use. My portfolio is a space where I showcase my projects, learning journey, and anything else happening in my life. When I'm not coding, you'll find me indulging in my hobbies of building custom keyboards and playing video games!</p>
+                <div className='max-w-[1100px] w-full grid sm:grid-cols-2 gap-8 px-4'>
+                    <div className='flex gap-8 snap-x snap-mandatory overflow-x-scroll'>
+                        <img src={kobi1} className='w-72 h-72 '/>
+                        <img src={kobi2} className='w-72 h-72 '/>
+                        <img src={kobi3} className='w-72 h-72 '/>
+                        <img src={mochi1} className='w-72 h-72 '/>
+                        <img src={mochi2} className='w-72 h-72 '/>
+                        <img src={mochi3} className='w-72 h-72 '/>
+                        
                     </div>
                     <div>
-                        
-
+                        <p className='text-2xl'>Hey there! I'm Brian Huynh, a Software Engineer based in California. I'm passionate about full-stack development and enjoy creating products for both personal and business use. My portfolio is a space where I showcase my projects, learning journey, and anything else happening in my life. When I'm not coding, you'll find me indulging in my hobbies of building custom keyboards and playing video games!</p> 
                     </div>
                 </div>
-                
-
             </div>
-        </div>
+      </div>
+  
     )
 }
+
+{
+/* <p>Hey there! I'm Brian Huynh, a Software Engineer based in California. I'm passionate about full-stack development and enjoy creating products for both personal and business use. My portfolio is a space where I showcase my projects, learning journey, and anything else happening in my life. When I'm not coding, you'll find me indulging in my hobbies of building custom keyboards and playing video games!</p> */}
 
 export default About;

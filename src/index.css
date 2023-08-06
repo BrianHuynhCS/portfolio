@@ -6,7 +6,7 @@
 
 @layer base {
     body {
-        @apply font-[sans-serif];
+        @apply font-sans;
     }
     li {
         @apply px-4;
