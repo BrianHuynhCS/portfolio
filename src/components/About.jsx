@@ -21,12 +21,12 @@ const About = () => {
 
                 <div className='max-w-[1100px] w-full grid sm:grid-cols-2 gap-8 px-4'>
                     <div className='flex gap-8 snap-x snap-mandatory overflow-x-scroll'>
-                        <img src={kobi1} className='w-72 h-72 '/>
-                        <img src={kobi2} className='w-72 h-72 '/>
-                        <img src={kobi3} className='w-72 h-72 '/>
-                        <img src={mochi1} className='w-72 h-72 '/>
-                        <img src={mochi2} className='w-72 h-72 '/>
-                        <img src={mochi3} className='w-72 h-72 '/>
+                        <img src={kobi1} alt='kobi1' className='w-72 h-72 '/>
+                        <img src={kobi2} alt='kobi2' className='w-72 h-72 '/>
+                        <img src={kobi3} alt='kobi3' className='w-72 h-72 '/>
+                        <img src={mochi1} alt='mochi1' className='w-72 h-72 '/>
+                        <img src={mochi2} alt='mochi2' className='w-72 h-72 '/>
+                        <img src={mochi3} alt='mochi3' className='w-72 h-72 '/>
                         
                     </div>
                     <div>
@@ -39,7 +39,5 @@ const About = () => {
     )
 }
 
-{
-/* <p>Hey there! I'm Brian Huynh, a Software Engineer based in California. I'm passionate about full-stack development and enjoy creating products for both personal and business use. My portfolio is a space where I showcase my projects, learning journey, and anything else happening in my life. When I'm not coding, you'll find me indulging in my hobbies of building custom keyboards and playing video games!</p> */}
 
 export default About;
