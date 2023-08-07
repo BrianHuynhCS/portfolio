@@ -1,6 +1,6 @@
 import React from 'react';
 import ProjectImg1 from '../assets/IMG_0888.JPG';
-import ProjectImg2 from '../assets/IMG_4775.JPG';
+// import ProjectImg2 from '../assets/IMG_4775.JPG';
 
 const Project = () => {
     return (
