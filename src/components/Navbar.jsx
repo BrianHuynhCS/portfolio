@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 import {FaBars, FaTimes, FaGithub, FaLinkedin} from 'react-icons/fa';
 import {HiOutlineMail} from 'react-icons/hi';
 import {BsFillPersonLinesFill} from 'react-icons/bs'
+import {Link} from 'react-scroll';
 
 const Navbar = () => {
     const [nav, setNav] = useState(false)
@@ -12,10 +13,26 @@ const Navbar = () => {
         <div className='fixed w-full h-[100px] flex justify-end items-center px-4 bg-[#79a9f2] text-white'>
             {/* menu */}
             <ul className='hidden md:flex'>
-                <li className='py-4 text-lg hover:bg-white hover:text-black'>Home</li>
-                <li className='py-4 text-lg hover:bg-white hover:text-black'>About</li>
-                <li className='py-4 text-lg hover:bg-white hover:text-black'>Skills</li>
-                <li className='py-4 text-lg hover:bg-white hover:text-black'>Contact</li>
+                <li className='py-4 text-lg hover:bg-white hover:text-black'>
+                    <Link to='home' smooth={true} offset={50} duration={500}>
+                        Home
+                    </Link>
+                </li>
+                <li className='py-4 text-lg hover:bg-white hover:text-black'>
+                    <Link to='about' smooth={true} offset={50} duration={500}>
+                        About
+                    </Link>
+                </li>
+                <li className='py-4 text-lg hover:bg-white hover:text-black'>
+                    <Link to='skill' smooth={true} offset={50} duration={500}>
+                        Skill
+                    </Link>
+                </li>
+                <li className='py-4 text-lg hover:bg-white hover:text-black'>
+                <Link to='contact' smooth={true} offset={50} duration={500}>
+                        Contact
+                </Link>
+                </li>
             </ul>
 
             {/* Hamburger */}
@@ -23,11 +40,27 @@ const Navbar = () => {
                 {!nav ? <FaBars size={30} /> : <FaTimes />}
             </div>
 
-            <ul className={!nav ? 'hidden' : 'absolute top-0 left-0 w-full h-screen bg-[#0a192f] flex flex-col justify-center items-center'}>
-                <li className='py-6 text-4xl'>Home</li>
-                <li className='py-6 text-4xl'>About</li>
-                <li className='py-6 text-4xl'>Skills</li>
-                <li className='py-6 text-4xl'>Contact</li>
+            <ul className={!nav ? 'hidden' : 'absolute top-0 left-0 w-full h-screen bg-[#79a9f2] flex flex-col justify-center items-center'}>
+                <li className='py-6 text-4xl'>
+                    <Link onClick={handleClick} to='home' smooth={true} offset={50} duration={500}>
+                        Home
+                    </Link>
+                </li>
+                <li className='py-6 text-4xl'>
+                    <Link onClick={handleClick} to='about' smooth={true} offset={50} duration={500}>
+                        About
+                    </Link>
+                </li>
+                <li className='py-6 text-4xl'>
+                    <Link onClick={handleClick} to='skill' smooth={true} offset={50} duration={500}>
+                        Skill
+                    </Link>
+                </li>
+                <li className='py-6 text-4xl'>
+                    <Link onClick={handleClick} to='contact' smooth={true} offset={50} duration={500}>
+                        Contact
+                    </Link>
+                </li>
             </ul>
 
             {/* Social Icons */}
