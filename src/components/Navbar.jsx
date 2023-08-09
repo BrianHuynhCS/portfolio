@@ -10,25 +10,30 @@ const Navbar = () => {
 
     return (
     /* bg-[#79a9f2] */
-        <div className='fixed w-full h-[100px] flex justify-end items-center px-4 bg-[#79a9f2] text-white'>
+        <div className='fixed w-full h-[100px] flex justify-end items-center px-4 bg-white text-black'>
             {/* menu */}
             <ul className='hidden md:flex'>
-                <li className='py-4 text-lg hover:bg-white hover:text-black'>
+                <li className='py-4 text-lg'>
                     <Link to='home' smooth={true} offset={50} duration={500}>
                         Home
                     </Link>
                 </li>
-                <li className='py-4 text-lg hover:bg-white hover:text-black'>
+                <li className='py-4 text-lg'>
                     <Link to='about' smooth={true} offset={50} duration={500}>
                         About
                     </Link>
                 </li>
-                <li className='py-4 text-lg hover:bg-white hover:text-black'>
+                <li className='py-4 text-lg'>
                     <Link to='skill' smooth={true} offset={50} duration={500}>
                         Skill
                     </Link>
                 </li>
-                <li className='py-4 text-lg hover:bg-white hover:text-black'>
+                <li className='py-4 text-lg'>
+                    <Link to='project' smooth={true} offset={50} duration={500}>
+                        Project
+                    </Link>
+                </li> 
+                <li className='py-4 text-lg'>
                 <Link to='contact' smooth={true} offset={50} duration={500}>
                         Contact
                 </Link>
@@ -76,11 +81,11 @@ const Navbar = () => {
                             Github <FaGithub size={30}/>
                         </a>
                     </li>
-                    <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-white'>
+                    {/* <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-white'>
                         <a className='flex justify-between items-center w-full text-black' href='/'>
                             Email <HiOutlineMail size={30}/>
                         </a>
-                    </li>
+                    </li> */}
                     <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#565f69]'>
                         <a className='flex justify-between items-center w-full text-gray-300' href='https://github.com/BrianHuynhCS/Resume/blob/main/Brian_Huynh_Resume.pdf'>
                             Resume <BsFillPersonLinesFill size={30}/>

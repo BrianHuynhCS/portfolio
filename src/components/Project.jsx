@@ -4,10 +4,10 @@ import ProjectImg1 from '../assets/IMG_0888.JPG';
 
 const Project = () => {
     return (
-        <div name='project' className='w-full md:h-screen bg-[#79a9f2] text-white'>
+        <div name='project' className='w-full md:h-screen bg-white text-black'>
             <div className='max-w-[1100px] w-full h-full mx-auto p-4 flex flex-col justify-center'>
                <div className='pb-8'>
-                    <p className='text-4xl font-bold inline border-b-4 border-white'>Projects</p>
+                    <p className='text-4xl font-bold inline border-b-4 border-black'>Projects</p>
                 </div> 
 
                 <div className='grid sm:grid-cols-2 md:grid-cols-3 gap-4'>

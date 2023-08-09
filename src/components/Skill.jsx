@@ -9,10 +9,10 @@ import NodeJS_icon from '../assets/icons/nodejs.svg'
 
 const Skill = () => {
     return (
-        <div name='skill' className='w-full h-screen bg-[#79a9f2] text-white'>
+        <div name='skill' className='w-full h-screen bg-white text-black'>
             <div className='max-w-[1100px] w-full h-full mx-auto p-4 flex flex-col justify-center'>
                 <div>
-                    <p className='text-4xl font-bold inline border-b-4 border-white'>Skills</p>
+                    <p className='text-4xl font-bold inline border-b-4 border-black'>Skills</p>
                 </div>
 
                 <div className='grid grid-cols-2 sm:grid-cols-3 gap-4 text-center py-8'>

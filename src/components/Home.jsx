@@ -1,11 +1,12 @@
 import React from 'react'
 import {HiArrowNarrowRight} from 'react-icons/hi'
+import {Link} from 'react-scroll';
 import pf from '../assets/IMG_9408.jpg'
 
 const Home = () => {
     return (
         <div>
-            <div name='home' className='w-fill h-screen bg-[#79a9f2] text-white'>
+            <div name='home' className='w-fill h-screen bg-white text-black'>
                 {/* Container */}
                 <div className='max-w-[1100px] mx-auto px-8 flex flex-col justify-center h-full'>
                     <div className='flex items-center justify-between'>
@@ -24,13 +25,14 @@ const Home = () => {
                         </div>
                     </div>
                     <div>
-                        <a href='/'>
-                            <button className='group rounded-md border-2 px-6 py-3 my-2 flex items-center hover:bg-white hover:text-black'>View Work 
-                            <span className='group-hover:rotate-90 duration-300'>
-                                <HiArrowNarrowRight className='ml-3'/>
-                            </span>
-                            </button>
-                        </a>
+                        <button className='group rounded-md border-2 border-black px-6 py-3 my-2 flex items-center'>
+                            <Link to='project' smooth={true} offset={50} duration={500}>
+                                View Work
+                            </Link>
+                        <span className='group-hover:rotate-90 duration-300'>
+                            <HiArrowNarrowRight className='ml-3'/>
+                        </span>
+                        </button>
                     </div>
                 </div>
             </div>
